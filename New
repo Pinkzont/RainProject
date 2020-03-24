@@ -1,0 +1,8 @@
+private static void waitPresenceOfElementLocatedBy(By locator) {
+               new WebDriverWait(getDriver(), Config.getLongData("wait"))
+                .until(ExpectedConditions.presenceOfElementLocated(locator));
+    }
+
+    private static void waitElementToBeClickable(By locator) {
+                new WebDriverWait(getDriver(), Config.getLongData("wait"))
+                .until(ExpectedConditions.elementToBeClickable(locator));
