@@ -1,0 +1,15 @@
+public class BaseMobileTest
+{
+    private transient AppiumDriver driver;
+
+    @BeforeEach
+    public void setup()
+    {
+        driver = MobileDriverProvider.getAppiumDriver();
+    }
+
+    @AfterEach
+    public void close()
+    {
+        driver.quit();
+    }
