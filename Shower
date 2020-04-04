@@ -8,3 +8,9 @@ private static void waitPresenceOfElementLocatedBy(By locator) {
         log.info(String.format("qwe"));
         new WebDriverWait(getDriver(), Config.getLongData("wait"))
                 .until(ExpectedConditions.elementToBeClickable(locator));
+                
+                private static void waitElementToBeClickable(By locator) {
+        log.info(String.format("qwe"));
+        new WebDriverWait(getDriver(), Config.getLongData("wait"))
+                .until(ExpectedConditions.elementToBeClickable(locator));
+    }
